@@ -1,5 +1,5 @@
 // File: ParticleCloudModern.cpp
-
+#define GL_SILENCE_DEPRECATION
 #include <FFGL.h>
 #include <FFGLLib.h>
 #include <FFGLPluginSDK.h>
