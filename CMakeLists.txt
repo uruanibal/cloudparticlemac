@@ -7,7 +7,7 @@ set(FFGL_SDK_DIR "${CMAKE_SOURCE_DIR}/ffgl")
 add_subdirectory("${FFGL_SDK_DIR}" ffgl_build)
 
 # Create plugin library
-add_library(ParticleCloudModern SHARED
+add_library(ParticleCloudModern MODULE
     ParticleCloudModern/ParticleCloudModern.cpp
 )
 
