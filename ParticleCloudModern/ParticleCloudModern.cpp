@@ -8,7 +8,6 @@
 #include <vector>
 #include <cmath>
 #include <algorithm>
-#include "glad/glad.h"
 
 // Total de 46 parámetros
 #define FFPARAM_COUNT             0
