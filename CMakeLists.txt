@@ -21,7 +21,8 @@ target_include_directories(ParticleCloudModern PRIVATE
 )
 
 # Link against FFGL
-target_link_libraries(ParticleCloudModern PRIVATE ffgl)
+target_link_libraries(ParticleCloudModern PRIVATE ffgl::sdk)
+
 
 # Produce a macOS .bundle
 set_target_properties(ParticleCloudModern PROPERTIES
