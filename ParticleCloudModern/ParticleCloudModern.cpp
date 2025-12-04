@@ -584,5 +584,3 @@ FFResult __stdcall ParticleCloudModern::CreateInstance(CFFGLPlugin** ppOutInstan
     *ppOutInstance = new ParticleCloudModern();
     return (*ppOutInstance != nullptr) ? FF_SUCCESS : FF_FAIL;
 }
-/ /   t r i g g e r  
- 
