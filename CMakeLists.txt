@@ -30,3 +30,4 @@ set_target_properties(ParticleCloudModern PROPERTIES
     MACOSX_BUNDLE TRUE
     OUTPUT_NAME "ParticleCloudModern"
 )
+target_link_libraries(ParticleCloudModern PRIVATE "-framework OpenGL")
