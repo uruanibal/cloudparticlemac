@@ -5,16 +5,25 @@ on: [push]
 jobs:
   macos:
     runs-on: macos-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+
+      - name: Clone FFGL SDK
+        run: git clone https://github.com/Resolume/ffgl.git ffgl
+
       - name: Install CMake
         run: brew install cmake
+
       - name: Configure
         run: cmake -S . -B build
+
       - name: Build
         run: cmake --build build --config Release
+
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ParticleCloudModern-macos
           path: build/Release/ParticleCloudModern.bundle
+          compression-level: 6
