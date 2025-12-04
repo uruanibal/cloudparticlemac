@@ -25,5 +25,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ParticleCloudModern-macos
-          path: build/Release/ParticleCloudModern.bundle
+          path: build/ParticleCloudModern.bundle
           compression-level: 6
